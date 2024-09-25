@@ -377,3 +377,8 @@ header nav {
 #bolac:hover{
     animation: rotate 2s infinite linear;
 }
+
+footer{
+    background-color: green;
+    min-height:8vh;
+}
