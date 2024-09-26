@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Maven+Pro:wght@400..900&family=Rowdies&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+header {
+    background-color: #483D8B;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 15vh;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.texto-header {
+    color: #32CD32;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+#logo p {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#logo {
+    color: #32CD32;
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+#logo:hover {
+    transform: scale(1.5, 1.5);
+}
+
+
+#logo-esportes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    gap: 14px;
+}
+
+#logo-esportes:hover {
+    transform: scale(1.5, 1.5);
+}
+
+#redes-logo {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    font-size: 18px;
+    gap: 14px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#redes-logo:hover {
+    transform: scale(1.5, 1.5);
+}
+
+#contato {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 18px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+#login button {
+    font-size: 16px;
+    display: flex;
+    border: 3px solid white;
+    border-radius: 8px;
+    background-color: #32CD32;
+    color: white;
+    padding: 6px;
+    transition: all 0.5s ease;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+}
+
+#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 8px;
+
+}
+
+#login button:hover {
+    background-color: black;
+    color: #32CD32;
+    border: 2px solid black;
+}
+
+
+#apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #708090;
+
+}
+
+#apresentacao h1 {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+#conteudo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-left: 20px;
+
+}
+
+#conteudo p {
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+
+}
+
+.texto {
+    font-family: "Maven Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 12px;
+}
+
+img{
+    transition: all 0.7s ease;
+
+}
+
+img:hover{
+    scale: 1.5;
+}
+
+#cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #7B68EE;
+    ;
+
+}
+
+#cards h2 {
+    font-size: 50px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+
+}
+
+.grupo-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: #7B68EE;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.card img {
+    width: 50%;
+    height: 220px;
+}
+
+.card {
+    height: 500px;
+    width: 15%;
+    margin: 0;
+    border: 4px solid black;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.card-info {
+    margin: 20px 10px;
+}
+
+.card-info h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-info p {
+    height: 700;
+    font-size: 14px;
+}
+
+.card-button {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.card-button button {
+    font-size: 20px;
+    border: 3px solid black;
+    border-radius: 4px;
+    padding: 4px;
+    color: #32CD32;
+    background-color: #483D8B;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+    transition: all 0.8 ease-out;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.card-button button:hover {
+    transform: scale(1.3, 1.3);
+}
+
+.etec-sports {
+    display: flex;
+    flex-direction: row;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-top: 3px solid black;
+    align-items: flex-start;
+
+}
+
+.img-esporte img {
+    height: 100%;
+    width: 180px;
+
+}
+
+#futebol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background-color: #483D8B;
+    padding: 20px;
+}
+
+.esporte-texto h2 {
+    font-size: 36px;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+
+}
+
+.esporte-texto h3 {
+    font-size: 24px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    margin-bottom: 10px;
+    padding-left: 10px;
+
+}
+
+.esporte-texto p {
+    font-size: 16px;
+    font-family: "Maven Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 12px;
+    color: white;
+}
+
+#basquete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background-color: #FF8C00;
+    padding: 20px;
+}
+
+#volei {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background-color: #4F4F4F;
+    padding: 20px;
+}
+
+#natacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background-color: #191970;
+    padding: 20px;
+}
+
+#atletismo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background-color: #008000;
+    padding: 20px;
+}
+
+#bola {
+    transition: all 1.2s ease;
+}
+
+#bola:hover {
+    animation: rotate 2s infinite linear;
+}
+
+#bolab {
+    transition: all 1.2s ease;
+}
+
+#bolab:hover {
+    animation: rotate 2s infinite linear;
+}
+
+#bolac {
+    transition: all 1.2s ease;
+}
+
+#bolac:hover {
+    animation: rotate 2s infinite linear;
+}
+
+footer {
+    background-color: #483D8B;
+    display: flex;
+    align-items: center;
+    min-height: 9vh;
+    justify-content: space-around;
+    border-top: 3px solid black;
+}
+
+.footer1 {
+    display: flex;
+    flex-direction: row;
+    padding-left: 60px;
+}
+
+#dev {
+    display: flex;
+    flex-direction: column;
+}
+
+#dev h2 {
+    font-size: 26px;
+    color: white;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#dev h3 {
+    font-size: 22px;
+    color: white;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#red-s {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    font-size: 26px;
+    gap: 20px;
+}
+
+.button-b{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-b button{
+    padding: 16px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 26px;
+    border: 3px solid white;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    border-radius: 8px;
+    transition: all 0.4s ease;
+}
+
+.button-b button:hover{
+    transform: scale(1.4);
+}
+
+
+.lista{
+    font-size: 16px;
+    font-family: "Maven Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 12px;
+    color: white;
+    padding-left: 16px;
+}
