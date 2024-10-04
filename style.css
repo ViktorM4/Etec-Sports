@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Maven+Pro:wght@400..900&family=Rowdies&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 @keyframes rotate {
     from {
@@ -174,12 +175,12 @@ header nav {
     margin-bottom: 12px;
 }
 
-img{
+img {
     transition: all 0.7s ease;
 
 }
 
-img:hover{
+img:hover {
     scale: 1.5;
 }
 
@@ -437,13 +438,13 @@ footer {
     gap: 20px;
 }
 
-.button-b{
+.button-b {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.button-b button{
+.button-b button {
     padding: 16px;
     padding-left: 40px;
     padding-right: 40px;
@@ -456,12 +457,12 @@ footer {
     transition: all 0.4s ease;
 }
 
-.button-b button:hover{
+.button-b button:hover {
     transform: scale(1.4);
 }
 
 
-.lista{
+.lista {
     font-size: 16px;
     font-family: "Maven Pro", sans-serif;
     font-optical-sizing: auto;
@@ -470,4 +471,68 @@ footer {
     margin-bottom: 12px;
     color: white;
     padding-left: 16px;
+}
+
+
+#tabela {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#tabela h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 3px 3px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#tabela table {
+    width: 70%;
+    border-collapse: collapse;
+}
+
+#tabela td,
+th {
+    padding: 18px;
+    text-align: center;
+    border: 1px solid black;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#tabela th {
+    background-color: #7e7e7e;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#tabela tbody tr {
+    background-color: white;
+    transition: all 1s ease;
+
+}
+
+#tabela tbody tr:hover {
+    background-color: #7E7E7E;
+    color: white;
+}
+
+.nome-modalidade {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.esforço{
+    font-size: 18px;
+    font-weight: 600;
 }
